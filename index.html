@@ -1,0 +1,336 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.6.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+
+    <title>Document</title>
+  </head>
+  <body class="bg-white">
+    <nav class="flex items-center justify-between px-4 md:px-8 bg-[#F5E2CF]">
+      <!-- logo -->
+      <a href="#">
+        <img src="assets/logo_red.png" alt="" class="h-10 md:h-16" />
+      </a>
+      <!-- search & icons -->
+      <div class="flex gap-4 items-center">
+        <div
+          class="md:flex gap-2 items-center md:bg-[#faefe5] hidden md:w-72 lg:w-80 md:p-2 md:ml-16 rounded-lg :"
+        >
+          <i class="ri-search-line text-2xl text-[#C01C1C]"></i>
+          <p class="hidden md:flex md:text-[#0A0A0A]">search</p>
+        </div>
+        <!-- icons -->
+        <div class="flex gap-2 md:gap-4 lg:gap-8">
+          <a
+            href="#"
+            class="flex gap-2 items-center text-[#C01C1C] hover:text-[#EB3031]"
+          >
+            <i class="ri-user-line text-lg md:text-2xl"></i>
+            <span class="hidden md:block">Profile</span>
+          </a>
+          <a
+            href="#"
+            class="flex items-center text-[#C01C1C] hover:text-[#EB3031]"
+          >
+            <i class="ri-heart-line text-lg md:text-2xl hidden md:block"></i>
+          </a>
+          <a
+            href="#"
+            class="flex gap-2 items-center text-[#C01C1C] hover:text-[#EB3031]"
+          >
+            <i class="ri-shopping-bag-3-line text-lg md:text-2xl"></i>
+            <span class="hidden md:block">Cart</span>
+          </a>
+        </div>
+      </div>
+    </nav>
+    <!--secondary nav - Available options -->
+    <div
+      class="bg-[#f9e9d9] h-12 items-center px-8 overflow-x-hidden hidden sm:flex"
+    >
+      <a href="#" class="p-2 px-4 md:px-8 hover:text-[#EB3031]">Men</a>
+      <a href="#" class="p-2 px-4 md:px-8 hover:text-[#EB3031]">Women</a>
+      <a href="#" class="p-2 px-4 md:px-8 hover:text-[#EB3031]"
+        >Beauty Product</a
+      >
+      <a href="#" class="p-2 px-4 md:px-8 hover:text-[#EB3031]">Luxury</a>
+      <a href="#" class="p-2 px-4 md:px-8 hover:text-[#EB3031]">Bag</a>
+    </div>
+    <main>
+      <!-- hero -->
+      <div id="hero" class="relative h-150 md:h-168 md:w-full overflow-hidden">
+        <!-- Background image -->
+        <img
+          src="assets/rayul-_M6gy9oHgII-unsplash.jpg"
+          alt=""
+          class="absolute h-full w-full object-cover"
+        />
+        <div class="absolute inset-0 bg-black/20"></div>
+        <!-- Text content -->
+        <div class="relative z-10 flex h-full px-4 md:px-8 mt-32 md:mt-48">
+          <div class="flex flex-col gap-4">
+            <h1 class="text-4xl md:text-6xl font-bold text-white">
+              Luxury That Speaks
+            </h1>
+            <h3 class="text-lg md:text-xl font-normal text-[#f8ebdf] md:mt-1">
+              Created for moments that deserve distinction.
+            </h3>
+            <button
+              class="bg-[#EB3031] w-fit py-1 px-2 rounded-lg hover:bg-[#C01C1C] md:mt-6 md:px-3 md:py-2"
+            >
+              <span class="font-medium text-white md:text-lg"
+                >New arrivals</span
+              >
+              <i class="ri-arrow-right-up-line text-white"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- 2nd section (new arrival) -->
+      <div id="new_arrival" class="pt-8 sm:pt-16">
+        <span
+          class="font-normal md:text-lg opacity-50 sm:pl-8 flex justify-center sm:justify-start"
+          >Categories</span
+        >
+        <div class="pt-8 sm:pt-16 pb-8 sm:pb-16 md:pb-32">
+          <div class="flex justify-center">
+            <h2
+              class="text-3xl md:text-5xl sm:text-4xl text-center font-medium p-4 w-80 md:w-132"
+            >
+              Fresh arrivals and new selection
+            </h2>
+          </div>
+          <div class="overflow-x-scroll">
+            <!-- collections -->
+            <div class="pt-24 flex gap-4 w-fit px-2 sm:px-4 lg:px-6">
+              <!-- card-1 -->
+              <div
+                id="card1"
+                class="relative h-48 sm:h-64 lg:h-80 w-64 sm:w-sm lg:w-lg rounded-3xl lg:rounded-4xl overflow-hidden"
+              >
+                <img
+                  src="assets/Women_fashion_new.jpg"
+                  alt=""
+                  class="absolute h-full w-full object-cover"
+                />
+                <div class="absolute bottom-6 left-6 flex w-fit">
+                  <div
+                    class="w-fit px-8 py-2 rounded-3xl bg-[#F5E2CF]/80 backdrop-blur-sm shadow-[0_8px_30px_rgba(0,0,0,0.25)] z-10"
+                  >
+                    <span class="text-sm sm:text-medium">Women</span>
+                  </div>
+                  <div
+                    class="px-3 py-1.75 rounded-3xl bg-[#F5E2CF]/80 backdrop-blur-sm shadow-[0_8px_30px_rgba(0,0,0,0.25)] z-10"
+                  >
+                    <i class="ri-arrow-right-up-line hover:text-[#EB3031]"></i>
+                  </div>
+                </div>
+              </div>
+              <!-- card-2 -->
+              <div
+                id="card2"
+                class="relative h-48 sm:h-64 lg:h-80 w-48 sm:w-64 lg:w-80 rounded-3xl lg:rounded-4xl overflow-hidden"
+              >
+                <img
+                  src="assets/Men_fashion1.jpg"
+                  alt=""
+                  class="absolute h-full w-full object-cover"
+                />
+                <div class="absolute bottom-6 left-6 flex w-fit">
+                  <div
+                    class="w-fit px-8 py-2 rounded-3xl bg-[#F5E2CF]/80 backdrop-blur-sm shadow-[0_8px_30px_rgba(0,0,0,0.25)]"
+                  >
+                    <span class="text-sm sm:text-medium">Men</span>
+                  </div>
+                  <div
+                    class="px-3 py-1.75 rounded-3xl bg-[#F5E2CF]/80 backdrop-blur-sm shadow-[0_8px_30px_rgba(0,0,0,0.25)]"
+                  >
+                    <i class="ri-arrow-right-up-line"></i>
+                  </div>
+                </div>
+              </div>
+              <!-- card-3 -->
+              <div
+                id="card3"
+                class="relative h-48 sm:h-64 lg:h-80 w-48 sm:w-64 lg:w-80 rounded-3xl lg:rounded-4xl overflow-hidden"
+              >
+                <img
+                  src="assets/Cloths5.jpg"
+                  alt=""
+                  class="absolute h-full w-full object-cover"
+                />
+                <div class="absolute bottom-6 left-6 flex w-fit">
+                  <div
+                    class="w-fit px-6 sm:px-8 py-2 rounded-3xl bg-[#F5E2CF]/80 backdrop-blur-sm shadow-[0_8px_30px_rgba(0,0,0,0.25)]"
+                  >
+                    <span class="text-sm sm:text-medium flex gap-1"
+                      >Women's
+                      <span class="text-sm block sm:hidden"> ... </span>
+                      <span class="text-sm sm:text-medium hidden sm:block">
+                        fashion
+                      </span>
+                    </span>
+                  </div>
+                  <div
+                    class="px-3 py-1.75 rounded-3xl bg-[#F5E2CF]/80 backdrop-blur-sm shadow-[0_8px_30px_rgba(0,0,0,0.25)]"
+                  >
+                    <i class="ri-arrow-right-up-line"></i>
+                  </div>
+                </div>
+              </div>
+              <!-- card-4 -->
+              <div
+                id="card4"
+                class="relative h-48 sm:h-64 lg:h-80 w-48 sm:w-64 lg:w-80 rounded-3xl lg:rounded-4xl overflow-hidden"
+              >
+                <img
+                  src="assets/Cloths2.jpg"
+                  alt=""
+                  class="absolute h-full w-full object-cover"
+                />
+                <div class="absolute bottom-6 left-6 flex w-fit">
+                  <div
+                    class="w-fit px-6 sm:px-8 py-2 rounded-3xl bg-[#F5E2CF]/80 backdrop-blur-sm shadow-[0_8px_30px_rgba(0,0,0,0.25)]"
+                  >
+                    <span class="text-sm sm:text-medium flex gap-1"
+                      >Men's
+                      <span class="text-sm block sm:hidden"> ... </span>
+                      <span class="text-sm sm:text-medium hidden sm:block">
+                        fashion
+                      </span>
+                    </span>
+                  </div>
+                  <div
+                    class="px-3 py-1.75 rounded-3xl bg-[#F5E2CF]/80 backdrop-blur-sm shadow-[0_8px_30px_rgba(0,0,0,0.25)]"
+                  >
+                    <i class="ri-arrow-right-up-line"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 3rd section (Offers) -->
+      <div id="Offers" class="pt-8">
+        <span
+          class="font-normal md:text-lg opacity-50 sm:pl-8 flex justify-center sm:justify-start"
+          >Offers</span
+        >
+        <div class="pt-8 sm:pt-16 pb-8 sm:pb-16 md:pb-32">
+          <div class="flex justify-center">
+            <h2
+              class="text-3xl md:text-5xl sm:text-4xl text-center font-medium p-4 w-80 sm:w-120 md:w-132"
+            >
+              Fashion and offers for everybody
+            </h2>
+          </div>
+          <!-- container -->
+          <div class="h-fit py-6 pt-16 sm:pt-24">
+            <!-- card -->
+            <div
+              class="mx-6 rounded-lg overflow-hidden bg-[#F5E2CF] flex flex-col sm:flex-row"
+            >
+              <!-- image -->
+              <div class="w-full md:w-1/2 h-56 sm:h-auto overflow-hidden">
+                <img
+                  src="assets/Cloths3.jpg"
+                  alt=""
+                  class="h-full w-full object-cover"
+                />
+              </div>
+
+              <!-- text -->
+              <div
+                class="w-full sm:w-1/2 flex flex-col items-center justify-center text-center px-6 py-10"
+              >
+                <div
+                  class="mt-8 px-2 py-1 bg-[#ffffff]/50 sm:bg-[#ffffff]/80 w-fit h-fit rounded-3xl flex justify-center"
+                >
+                  <span class="text-xs font-medium">Special offers</span>
+                </div>
+                <div
+                  class="flex flex-col text-center items-center justify-center mb-16"
+                >
+                  <h2 class="mt-3 px-2 font-medium leading-snug sm:text-2xl">
+                    Exclusive Fashion Awaits
+                  </h2>
+                  <p class="mt-3 leading-snug px-4 sm:text-lg sm:px-12">
+                    Unlock fashion favorites transform into affordable luxuries.
+                    Every selection within our Offer Section beckons you to
+                    embrace.
+                  </p>
+                  <div
+                    class="mt-6 w-fit h-fit px-3 py-1 rounded-3xl bg-[#C01C1C]/80 hover:bg-[#eb3031] sm:px-4 sm:py-2"
+                  >
+                    <span
+                      class="text-sm sm:text-medium font-medium text-[#ffffff]"
+                      >Claim offers</span
+                    >
+                    <i
+                      class="ri-arrow-right-up-line text-[#ffffff] font-medium"
+                    ></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- footer -->
+      <footer
+        class="bg-[#a10a0a] overflow-hidden justify-center items-center text-center h-176 sm:h-110 md:h-140 lg:h-168"
+      >
+        <!-- footer doc -->
+        <div
+          class="flex flex-col sm:flex-row w-full px-8 pt-8 text-center sm:justify-end lg:pt-24 h-fit"
+        >
+          <div class="flex flex-col sm:pl-16 md:pl-24 lg:pl-36 pt-4">
+            <span class="text-[16px] md:text-lg sm:pb-2  font-medium text-gray-300">Product</span>
+            <span class="text-[16px] md:text-lg   font-normal text-gray-400 hover:underline hover:text-gray-300">Listed brands</span>
+            <span class="text-[16px] md:text-lg   font-normal text-gray-400 hover:underline hover:text-gray-300">Features</span>
+            <span class="text-[16px] md:text-lg   font-normal text-gray-400 hover:underline hover:text-gray-300">Pricing</span>
+          </div>
+          <div class="flex flex-col sm:pl-16 md:pl-24 lg:pl-36 pt-4">
+            <span class="text-[16px] md:text-lg sm:pb-2  font-medium text-gray-300">Resources</span>
+            <span class="text-[16px] md:text-lg   font-normal text-gray-400 hover:underline hover:text-gray-300">Documentation</span>
+            <span class="text-[16px] md:text-lg   font-normal text-gray-400 hover:underline hover:text-gray-300">Blog</span>
+            <span class="text-[16px] md:text-lg   font-normal text-gray-400 hover:underline hover:text-gray-300">Support</span>
+          </div>
+          <div class="flex flex-col sm:pl-16 md:pl-24 lg:pl-36 pt-4">
+            <span class="text-[16px] md:text-lg sm:pb-2  font-medium text-gray-300">Company</span>
+            <span class="text-[16px] md:text-lg   font-normal text-gray-400 hover:underline hover:text-gray-300">About</span>
+            <span class="text-[16px] md:text-lg   font-normal text-gray-400 hover:underline hover:text-gray-300">Carrers</span>
+            <span class="text-[16px] md:text-lg   font-normal text-gray-400 hover:underline hover:text-gray-300">Contact</span>
+          </div>
+        </div>
+        <!-- policies and copyright -->
+        <div class="flex flex-col sm:flex-row sm:justify-between sm:items-start w-full mt-4 sm:mt-8 lg:mt-16 text-gray-300 ">
+          <div class="text-sm pl-2 pt-8 sm:text-start">
+            <span class="font-medium text-[12px] pt-8 pl-8">
+              &#169; 2026 ORIN. All riights are reserved.
+            </span>
+          </div>
+          <div class="flex flex-col sm:flex-row pt-8 sm:ml-auto sm:text-end mr-8">
+            <span class="text-sm underline pl-2 pt-2 sm:pt-0 hover:text-gray-50 lg:pl-4">Privacy Policy</span>
+            <span class="text-sm underline pl-2 pt-2 sm:pt-0 hover:text-gray-50 lg:pl-4">Terms of Service</span>
+            <span class="text-sm underline pl-2 pt-2 sm:pt-0 hover:text-gray-50 lg:pl-4">Cookies settings</span>
+          </div>
+          
+        </div>
+        <img
+          src="assets/logo_white.png"
+          class="translate-y-16 md:translate-y-24 lg:-translate-y-8 w-full sm:translate-y-0 md:-mt-8"
+          alt=""
+        />
+        <div></div>
+      </footer>
+    </main>
+  </body>
+</html>
